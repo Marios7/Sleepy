@@ -27,3 +27,14 @@ Sleppy offers two modes:
 2. **Active Mode** — Moves the mouse slightly if you're inactive, keeping your status as "Available".
 
 It uses the native Windows `SetThreadExecutionState` API with `ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_DISPLAY_REQUIRED` to prevent sleep and display turn-off. This call is refreshed periodically.
+
+## Disclaimer
+Sleppy was created for personal use to avoid unproductive sleep time during remote work. Use responsibly, especially if you're subject to company IT policies.
+
+Copyright (c) 2025 [Your Name]
+## 📄 License
+
+This project is licensed under a **Custom Personal Use License**.  
+It is free to use and modify for **personal, non-commercial purposes only**.  
+Commercial use, redistribution, or resale is strictly prohibited.  
+See the [LICENSE](LICENSE) file for full details.
