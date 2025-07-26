@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+   <Product Id="212ADA03-48D2-466B-AA2D-B3A2BB3A4051" Name="Sleepy" Language="1033" Version="1.0.0.0" Manufacturer="YourCompany" UpgradeCode="PUT-GUID-HERE">
+      <Package InstallerVersion="500" Compressed="yes" Comments="Installer for Sleepy app"/>
+
+      <Media Id="1" Cabinet="sample.cab" EmbedCab="yes"/>
+
+      <!-- Define the folder where the app will be installed -->
+      <Directory Id="TARGETDIR" Name="SourceDir">
+         <Directory Id="ProgramFilesFolder">
+            <Directory Id="INSTALLFOLDER" Name="SleepyApp">
+               <!-- Add your app executable and other files -->
+               <Component Id="MainExecutable" Guid="3753052B-282C-4C85-B57D-BAF57B2FA317">
+                  <File Id="MainExe" Name="Sleepy.exe" Source="..\..\..\..\publish\Sleepy.exe"/>
+               </Component>
+            </Directory>
+         </Directory>
+      </Directory>
+
+ 
+      <Feature Id="ProductFeature" Title="Sleepy App" Level="1">
+         <ComponentRef Id="MainExecutable"/>
+      </Feature>
+   </Product>
+</Wix>

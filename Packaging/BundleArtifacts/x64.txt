@@ -1,0 +1,2 @@
+MainPackage=B:\Projects\Sleepy\Packaging\bin\x64\Release\Packaging_1.0.4.0_x64.msix
+SymbolPackage=B:\Projects\Sleepy\Packaging\obj\x64\Release\Symbols\Packaging_1.0.4.0_x64.appxsym
