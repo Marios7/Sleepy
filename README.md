@@ -1,4 +1,4 @@
-# Sleppy 💤🖱️
+# Sleppy 💤
 
 **Sleppy** is a lightweight windows only utility that prevents your PC from going to sleep due to inactivity. It was built to help remote workers stay connected and avoid disruptions caused by strict system sleep policies enforced by corporate IT departments.
 
@@ -14,10 +14,10 @@ Sleppy keeps your machine awake and optionally simulates mouse movement to avoid
 
 ## 🚀 Features
 
-- ✅ Prevents Windows from going to sleep
-- ✅ Optional mouse movement to keep collaboration tools (like Teams) showing "Available"
-- ✅ Lightweight and runs in the background
-- ✅ Supports idle-time checks to act only when you're truly inactive
+- Prevents Windows from going to sleep
+- Optional mouse movement to keep collaboration tools (like Teams) showing "Available"
+- Lightweight and runs in the background
+- Supports idle-time checks to act only when you're truly inactive
 
 ## ⚙️ How It Works
 
