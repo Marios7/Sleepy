@@ -31,7 +31,7 @@ It uses the native Windows `SetThreadExecutionState` API with `ES_CONTINUOUS | E
 ## Disclaimer
 Sleppy was created for personal use to avoid unproductive sleep time during remote work. Use responsibly, especially if you're subject to company IT policies.
 
-Copyright (c) 2025 [Your Name]
+Copyright (c) 2025 @Marios7
 ## 📄 License
 
 This project is licensed under a **Custom Personal Use License**.  
