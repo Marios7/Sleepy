@@ -11,7 +11,7 @@
 		<Nullable>enable</Nullable>
 		<EnableDpiAwareness>true</EnableDpiAwareness>
 		<EnableMsixTooling>true</EnableMsixTooling>
-		<WindowsPackageType>None</WindowsPackageType>
+		<WindowsPackageType>MSIX</WindowsPackageType>
 		<PublishProfile>Properties\PublishProfiles\win-$(Platform).pubxml</PublishProfile>
 		<Configurations>Debug;Release;Deploy</Configurations>
 	</PropertyGroup>

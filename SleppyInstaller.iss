@@ -5,7 +5,7 @@
 #define TargetFramework "net8.0-windows10.0.26100.0"
 
 [Setup]
-AppId={5DD15D58-4785-4E87-BC68-599FF19D2CE9}
+AppId={{5DD15D58-4785-4E87-BC68-599FF19D2CE9}}
 AppName={#MyAppName}
 AppVersion={#Version}
 DefaultDirName={pf}\{#MyAppName}
@@ -19,6 +19,7 @@ ArchitecturesInstallIn64BitMode=x64
 DisableProgramGroupPage=yes
 WizardStyle=modern
 
+
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
@@ -26,7 +27,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "Create a &desktop icon"; GroupDescription: "Additional icons:"; Flags: unchecked
 
 [Files]
-Source: "UI\bin\Release\Publish\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; DestName: "Sleepy.exe"
+Source: "UI\bin\Release\Publish\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; 
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#AppExeName}"
