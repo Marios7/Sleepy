@@ -1,4 +1,4 @@
-using Sleppy.Functionality;
+﻿using Sleppy.Functionality;
 
 namespace Sleppy
 {
@@ -18,6 +18,7 @@ namespace Sleppy
 
         public void Start(int idleThresholdInSeconds, bool moveMouse)
         {
+            cancellationTokenSource = new CancellationTokenSource(); // Reset the CTS 
             if (_backgroundTask != null && !_backgroundTask.IsCompleted)
             {
                 return; // Task is already running  
@@ -33,9 +34,12 @@ namespace Sleppy
             if (cancellationTokenSource != null)
             {
                 cancellationTokenSource.Cancel();
-                SleepManager.AllowSleep();
-                Interlocked.Exchange(ref isPreventingSleep, 0); // Reset flag safely  
+                cancellationTokenSource.Dispose();
             }
+            SleepManager.AllowSleep();
+            Interlocked.Exchange(ref isPreventingSleep, 0); // Reset flag safely  
+            _backgroundTask = null;
+
         }
 
         private async Task ExcuteAsyncWithoutMouseMovement(CancellationToken stoppingToken, int idleThresholdInSeconds)
